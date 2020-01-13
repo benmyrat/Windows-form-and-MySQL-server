@@ -1,0 +1,15 @@
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.csprojAssemblyReference.cache
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.LoginForm.resources
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.Properties.Resources.resources
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.csproj.GenerateResource.cache
+D:\Development\MyProjects\C#\authorization\bin\Debug\authorization.exe.config
+D:\Development\MyProjects\C#\authorization\bin\Debug\authorization.exe
+D:\Development\MyProjects\C#\authorization\bin\Debug\authorization.pdb
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.exe
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.pdb
+D:\Development\MyProjects\C#\authorization\bin\Debug\MySql.Data.dll
+D:\Development\MyProjects\C#\authorization\bin\Debug\Google.Protobuf.dll
+D:\Development\MyProjects\C#\authorization\bin\Debug\BouncyCastle.Crypto.dll
+D:\Development\MyProjects\C#\authorization\bin\Debug\Renci.SshNet.dll
+D:\Development\MyProjects\C#\authorization\bin\Debug\MySql.Data.xml
+D:\Development\MyProjects\C#\authorization\obj\Debug\authorization.csproj.CopyComplete
