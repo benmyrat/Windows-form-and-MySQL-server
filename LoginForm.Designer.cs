@@ -43,7 +43,9 @@
             this.minimizeButton = new System.Windows.Forms.Button();
             this.maximizeButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.goToRegistration = new System.Windows.Forms.Label();
             this.backgroundPanel.SuspendLayout();
+            this.footerPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPic)).BeginInit();
@@ -66,6 +68,7 @@
             // footerPanel
             // 
             this.footerPanel.BackColor = System.Drawing.Color.Lavender;
+            this.footerPanel.Controls.Add(this.goToRegistration);
             this.footerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.footerPanel.Location = new System.Drawing.Point(0, 560);
             this.footerPanel.Name = "footerPanel";
@@ -235,6 +238,22 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // goToRegistration
+            // 
+            this.goToRegistration.AutoSize = true;
+            this.goToRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.goToRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goToRegistration.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goToRegistration.ForeColor = System.Drawing.Color.SteelBlue;
+            this.goToRegistration.Location = new System.Drawing.Point(176, 8);
+            this.goToRegistration.Name = "goToRegistration";
+            this.goToRegistration.Size = new System.Drawing.Size(176, 23);
+            this.goToRegistration.TabIndex = 0;
+            this.goToRegistration.Text = "Ещё нет аккаунта?";
+            this.goToRegistration.Click += new System.EventHandler(this.goToRegistration_Click);
+            this.goToRegistration.MouseEnter += new System.EventHandler(this.goToRegistration_MouseEnter);
+            this.goToRegistration.MouseLeave += new System.EventHandler(this.goToRegistration_MouseLeave);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 35F);
@@ -248,6 +267,8 @@
             this.Name = "LoginForm";
             this.Text = "LoginForm";
             this.backgroundPanel.ResumeLayout(false);
+            this.footerPanel.ResumeLayout(false);
+            this.footerPanel.PerformLayout();
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -275,5 +296,6 @@
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.CheckBox showPass;
         private System.Windows.Forms.Button signInButton;
+        private System.Windows.Forms.Label goToRegistration;
     }
 }

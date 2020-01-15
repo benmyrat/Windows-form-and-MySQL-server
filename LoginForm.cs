@@ -106,14 +106,16 @@ namespace authorization
             connectionDatabase myDatabase = new connectionDatabase();
             DataTable myTable = new DataTable();
             MySqlDataAdapter myAdapter = new MySqlDataAdapter();
-            MySqlCommand myCommand = new MySqlCommand("SELECT * FROM `signIn` " +
+            MySqlCommand myCommand = new MySqlCommand("SELECT * FROM `authorization` " +
                 "WHERE `login` = @uL AND `pass` = @uP", myDatabase.getConnection());
             myCommand.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
             myCommand.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
-            
+
             myAdapter.SelectCommand = myCommand;
+
             myAdapter.Fill(myTable);
             if (myTable.Rows.Count > 0)
+
             {
                 MessageBox.Show("Welcome!");
             }
@@ -121,6 +123,26 @@ namespace authorization
             {
                 MessageBox.Show("Sorry");
             }
+        }
+
+        private void goToRegistration_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Hide();
+            this.Hide();
+            loginForm.Close();
+            Registration registrationForm = new Registration();
+            registrationForm.Show();
+        }
+
+        private void goToRegistration_MouseEnter(object sender, EventArgs e)
+        {
+            goToRegistration.ForeColor = Color.Blue;
+        }
+
+        private void goToRegistration_MouseLeave(object sender, EventArgs e)
+        {
+            goToRegistration.ForeColor = Color.SteelBlue;
         }
     }
 }

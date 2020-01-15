@@ -1,20 +1,21 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
-using System.Data;
 
 namespace authorization
 {
-    public class connectionDatabase
+    class connectionDatabase
     {
-        MySqlConnection connection = new MySqlConnection("datasource=192.168.43.130;port=3306;" +
-            "username=root;password=21071998;database=authorization");
+        MySql.Data.MySqlClient.MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;" +
+           "username=root;password=21071998;database=mylittledatabase");
+
         public void openConnection()
         {
-            if (connection.State == ConnectionState.Closed)
+            if (connection.State == System.Data.ConnectionState.Closed)
             {
                 connection.Open();
             }
